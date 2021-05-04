@@ -10,21 +10,27 @@ using System.Windows.Forms;
 
 namespace TicTacToe
 {
-    public partial class Form1 : Form
+    public partial class Form_HomeScreen : Form
     {
-        public Form1()
+        public Form_HomeScreen()
         {
             InitializeComponent();
         }
 
         Color mouseOverColor = Color.FromArgb(40, 116, 166);
         Color mouseOutColor = Color.FromArgb(27, 79, 114);
+
         int mouseX = 0, mouseY = 0;
         bool mouseDown;
 
         private void button_exit_Click(object sender, EventArgs e)
         {
-            Close();
+            DialogResult check;
+            check = MessageBox.Show("Are you sure?", "Exit", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            if (check == DialogResult.Yes)
+            {
+                this.Close();
+            }            
         }
 
         private void panel1_MouseDown(object sender, MouseEventArgs e)
@@ -49,14 +55,21 @@ namespace TicTacToe
             }
         }
 
-        private void panel1_MouseUp(object sender, MouseEventArgs e)
-        {
-            mouseDown = false;
-        }
-
         private void button_X_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void button_playWithFriend_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form_PlayWithFriend frm_PlayWithFriend = new Form_PlayWithFriend();
+            frm_PlayWithFriend.ShowDialog();
+        }
+
+        private void panel1_MouseUp(object sender, MouseEventArgs e)
+        {
+            mouseDown = false;
         }
     }
 }
