@@ -57,7 +57,7 @@ namespace TicTacToe
             this.button_11.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.button_11.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(134)))), ((int)(((byte)(193)))));
             this.button_11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_11.Font = new System.Drawing.Font("Century Gothic", 40.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_11.Font = new System.Drawing.Font("Gill Sans Ultra Bold", 40.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.button_11.Location = new System.Drawing.Point(9, 280);
             this.button_11.Name = "button_11";
@@ -75,7 +75,7 @@ namespace TicTacToe
             this.button_22.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.button_22.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(134)))), ((int)(((byte)(193)))));
             this.button_22.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_22.Font = new System.Drawing.Font("Century Gothic", 40.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_22.Font = new System.Drawing.Font("Gill Sans Ultra Bold", 40.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_22.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.button_22.Location = new System.Drawing.Point(188, 434);
             this.button_22.Name = "button_22";
@@ -93,7 +93,7 @@ namespace TicTacToe
             this.button_33.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.button_33.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(134)))), ((int)(((byte)(193)))));
             this.button_33.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_33.Font = new System.Drawing.Font("Century Gothic", 40.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_33.Font = new System.Drawing.Font("Gill Sans Ultra Bold", 40.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_33.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.button_33.Location = new System.Drawing.Point(367, 588);
             this.button_33.Name = "button_33";
@@ -111,7 +111,7 @@ namespace TicTacToe
             this.button_23.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.button_23.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(134)))), ((int)(((byte)(193)))));
             this.button_23.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_23.Font = new System.Drawing.Font("Century Gothic", 40.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_23.Font = new System.Drawing.Font("Gill Sans Ultra Bold", 40.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_23.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.button_23.Location = new System.Drawing.Point(367, 434);
             this.button_23.Name = "button_23";
@@ -129,7 +129,7 @@ namespace TicTacToe
             this.button_32.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.button_32.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(134)))), ((int)(((byte)(193)))));
             this.button_32.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_32.Font = new System.Drawing.Font("Century Gothic", 40.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_32.Font = new System.Drawing.Font("Gill Sans Ultra Bold", 40.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_32.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.button_32.Location = new System.Drawing.Point(188, 588);
             this.button_32.Name = "button_32";
@@ -147,7 +147,7 @@ namespace TicTacToe
             this.button_13.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.button_13.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(134)))), ((int)(((byte)(193)))));
             this.button_13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_13.Font = new System.Drawing.Font("Century Gothic", 40.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_13.Font = new System.Drawing.Font("Gill Sans Ultra Bold", 40.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.button_13.Location = new System.Drawing.Point(367, 280);
             this.button_13.Name = "button_13";
@@ -165,7 +165,7 @@ namespace TicTacToe
             this.button_12.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.button_12.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(134)))), ((int)(((byte)(193)))));
             this.button_12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_12.Font = new System.Drawing.Font("Century Gothic", 40.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_12.Font = new System.Drawing.Font("Gill Sans Ultra Bold", 40.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.button_12.Location = new System.Drawing.Point(188, 280);
             this.button_12.Name = "button_12";
@@ -183,7 +183,7 @@ namespace TicTacToe
             this.button_31.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.button_31.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(134)))), ((int)(((byte)(193)))));
             this.button_31.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_31.Font = new System.Drawing.Font("Century Gothic", 40.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_31.Font = new System.Drawing.Font("Gill Sans Ultra Bold", 40.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_31.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.button_31.Location = new System.Drawing.Point(9, 588);
             this.button_31.Name = "button_31";
@@ -201,7 +201,7 @@ namespace TicTacToe
             this.button_21.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.button_21.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(134)))), ((int)(((byte)(193)))));
             this.button_21.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_21.Font = new System.Drawing.Font("Century Gothic", 40.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_21.Font = new System.Drawing.Font("Gill Sans Ultra Bold", 40.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_21.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.button_21.Location = new System.Drawing.Point(9, 434);
             this.button_21.Name = "button_21";
