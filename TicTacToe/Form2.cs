@@ -94,7 +94,6 @@ namespace TicTacToe
             if (count % 2 == 0)
             {
                 ((Button)btn).FlatAppearance.BorderColor = Color_Xtext;
-                ((Button)btn).ForeColor = Color_Xtext;
 
                 ((Button)btn).Text = "X";
                 ((Button)btn).Enabled = false;
@@ -103,7 +102,6 @@ namespace TicTacToe
             else
             {
                 ((Button)btn).FlatAppearance.BorderColor = Color_0tex;
-                ((Button)btn).ForeColor = Color_0tex;
 
                 ((Button)btn).Text = "0";
                 ((Button)btn).Enabled = false;
@@ -229,12 +227,10 @@ namespace TicTacToe
             {
                 if (count % 2 == 0)
                 {
-                    ((Button)sender).FlatAppearance.BorderColor = Color_Xtext;
                     ((Button)sender).Text = "X";
                 }
                 else
                 {
-                    ((Button)sender).FlatAppearance.BorderColor = Color_0tex;
                     ((Button)sender).Text = "0";
                 }
             }            
@@ -244,7 +240,6 @@ namespace TicTacToe
         {
             if (((Button)sender).Enabled)
             {
-                    ((Button)sender).FlatAppearance.BorderColor = Color_unselected;
                     ((Button)sender).Text = "";                
             }
         }
