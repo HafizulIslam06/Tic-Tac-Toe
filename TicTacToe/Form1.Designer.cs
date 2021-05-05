@@ -35,14 +35,14 @@ namespace TicTacToe
             this.button_about = new System.Windows.Forms.Button();
             this.button_exit = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.button_X = new System.Windows.Forms.Button();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label_nubGames = new System.Windows.Forms.Label();
+            this.pictureBox_NumGames = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_NumGames)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -121,28 +121,6 @@ namespace TicTacToe
             this.panel1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseMove);
             this.panel1.MouseUp += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseUp);
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Jokerman", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(105, 274);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(320, 72);
-            this.label1.TabIndex = 7;
-            this.label1.Text = "Tic Tac Toe";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Pristina", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.SteelBlue;
-            this.label2.Location = new System.Drawing.Point(422, 803);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(124, 32);
-            this.label2.TabIndex = 11;
-            this.label2.Text = "NuB Games";
-            // 
             // button_X
             // 
             this.button_X.FlatAppearance.BorderSize = 0;
@@ -158,15 +136,37 @@ namespace TicTacToe
             this.button_X.UseVisualStyleBackColor = true;
             this.button_X.Click += new System.EventHandler(this.button_X_Click);
             // 
-            // pictureBox3
+            // label1
             // 
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(445, 754);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(78, 46);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 10;
-            this.pictureBox3.TabStop = false;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Jokerman", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(105, 274);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(320, 72);
+            this.label1.TabIndex = 7;
+            this.label1.Text = "Tic Tac Toe";
+            // 
+            // label_nubGames
+            // 
+            this.label_nubGames.AutoSize = true;
+            this.label_nubGames.Font = new System.Drawing.Font("Pristina", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_nubGames.ForeColor = System.Drawing.Color.SteelBlue;
+            this.label_nubGames.Location = new System.Drawing.Point(422, 803);
+            this.label_nubGames.Name = "label_nubGames";
+            this.label_nubGames.Size = new System.Drawing.Size(124, 32);
+            this.label_nubGames.TabIndex = 11;
+            this.label_nubGames.Text = "NuB Games";
+            // 
+            // pictureBox_NumGames
+            // 
+            this.pictureBox_NumGames.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_NumGames.Image")));
+            this.pictureBox_NumGames.Location = new System.Drawing.Point(445, 754);
+            this.pictureBox_NumGames.Name = "pictureBox_NumGames";
+            this.pictureBox_NumGames.Size = new System.Drawing.Size(78, 46);
+            this.pictureBox_NumGames.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox_NumGames.TabIndex = 10;
+            this.pictureBox_NumGames.TabStop = false;
             // 
             // pictureBox2
             // 
@@ -194,8 +194,8 @@ namespace TicTacToe
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(79)))), ((int)(((byte)(114)))));
             this.ClientSize = new System.Drawing.Size(556, 844);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.pictureBox3);
+            this.Controls.Add(this.label_nubGames);
+            this.Controls.Add(this.pictureBox_NumGames);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label1);
@@ -209,7 +209,7 @@ namespace TicTacToe
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_NumGames)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -227,8 +227,8 @@ namespace TicTacToe
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.PictureBox pictureBox_NumGames;
+        private System.Windows.Forms.Label label_nubGames;
         private System.Windows.Forms.Button button_X;
     }
 }
