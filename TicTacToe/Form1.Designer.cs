@@ -37,15 +37,15 @@ namespace TicTacToe
             this.panel1 = new System.Windows.Forms.Panel();
             this.button_X = new System.Windows.Forms.Button();
             this.label_nubGames = new System.Windows.Forms.Label();
-            this.pictureBox_NumGames = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox_NumGames = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_NumGames)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_NumGames)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // button_playWithComputer
@@ -62,6 +62,7 @@ namespace TicTacToe
             this.button_playWithComputer.TabStop = false;
             this.button_playWithComputer.Text = "Play With Computer";
             this.button_playWithComputer.UseVisualStyleBackColor = true;
+            this.button_playWithComputer.Click += new System.EventHandler(this.button_playWithComputer_Click);
             // 
             // button_playWithFriend
             // 
@@ -93,6 +94,7 @@ namespace TicTacToe
             this.button_about.TabStop = false;
             this.button_about.Text = "About";
             this.button_about.UseVisualStyleBackColor = true;
+            this.button_about.Click += new System.EventHandler(this.button_about_Click);
             // 
             // button_exit
             // 
@@ -148,6 +150,16 @@ namespace TicTacToe
             this.label_nubGames.TabIndex = 11;
             this.label_nubGames.Text = "NuB Games";
             // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::TicTacToe.Properties.Resources.MicrosoftTeams_image__1_;
+            this.pictureBox3.Location = new System.Drawing.Point(62, 277);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(434, 49);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 12;
+            this.pictureBox3.TabStop = false;
+            // 
             // pictureBox_NumGames
             // 
             this.pictureBox_NumGames.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_NumGames.Image")));
@@ -157,16 +169,6 @@ namespace TicTacToe
             this.pictureBox_NumGames.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox_NumGames.TabIndex = 10;
             this.pictureBox_NumGames.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::TicTacToe.Properties.Resources._2;
-            this.pictureBox1.Location = new System.Drawing.Point(107, 85);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(189, 186);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox1.TabIndex = 8;
-            this.pictureBox1.TabStop = false;
             // 
             // pictureBox2
             // 
@@ -178,15 +180,15 @@ namespace TicTacToe
             this.pictureBox2.TabIndex = 9;
             this.pictureBox2.TabStop = false;
             // 
-            // pictureBox3
+            // pictureBox1
             // 
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(62, 277);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(434, 49);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 12;
-            this.pictureBox3.TabStop = false;
+            this.pictureBox1.Image = global::TicTacToe.Properties.Resources._2;
+            this.pictureBox1.Location = new System.Drawing.Point(107, 85);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(189, 186);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox1.TabIndex = 8;
+            this.pictureBox1.TabStop = false;
             // 
             // Form_HomeScreen
             // 
@@ -209,10 +211,10 @@ namespace TicTacToe
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_NumGames)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_NumGames)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

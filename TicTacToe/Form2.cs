@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Media;
 
 namespace TicTacToe
 {
@@ -16,6 +17,10 @@ namespace TicTacToe
         {
             InitializeComponent();
         }
+        SoundPlayer MenubtnClickSound = new SoundPlayer(@"C:\Users\Hafiz\Downloads\TicTacToe\TicTacToe\bin\Debug\menubtnclick2.wav");
+        SoundPlayer player1sound = new SoundPlayer(@"C:\Users\Hafiz\Downloads\TicTacToe\TicTacToe\bin\Debug\player1 click.wav");
+        SoundPlayer player2sound = new SoundPlayer(@"C:\Users\Hafiz\Downloads\TicTacToe\TicTacToe\bin\Debug\player2 click.wav");
+        SoundPlayer winSound = new SoundPlayer(@"C:\Users\Hafiz\Downloads\TicTacToe\TicTacToe\bin\Debug\Win.wav");
 
         int count = 0;
         int Player1_result = 0;
@@ -26,6 +31,7 @@ namespace TicTacToe
         Color Color_unselected = Color.FromArgb(23, 32, 42);
         private void button_Exit_Click(object sender, EventArgs e)
         {
+            MenubtnClickSound.Play();
             DialogResult check;
             check = MessageBox.Show("Are you sure?", "Exit", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
             if (check == DialogResult.Yes)
@@ -36,6 +42,7 @@ namespace TicTacToe
 
         private void button_Back_Click(object sender, EventArgs e)
         {
+            MenubtnClickSound.Play();
             DialogResult check;
             check = MessageBox.Show("Are you sure?", "Back", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
             if (check == DialogResult.Yes)
@@ -48,6 +55,7 @@ namespace TicTacToe
 
         private void button_Reset_Click(object sender, EventArgs e)
         {
+            MenubtnClickSound.Play();
             reset();
         }
 
@@ -93,6 +101,7 @@ namespace TicTacToe
         {
             if (count % 2 == 0)
             {
+                player1sound.Play();
                 ((Button)btn).FlatAppearance.BorderColor = Color_Xtext;
 
                 ((Button)btn).Text = "X";
@@ -101,6 +110,7 @@ namespace TicTacToe
             }
             else
             {
+                player2sound.Play();
                 ((Button)btn).FlatAppearance.BorderColor = Color_0tex;
 
                 ((Button)btn).Text = "0";
@@ -171,11 +181,13 @@ namespace TicTacToe
         {
             if (symbol == "X")
             {
+                winSound.Play();
                 Player1_result++;
                 button_player1_scoreBoard.Text = Player1_result.ToString();
             }
             else if (symbol == "0")
             {
+                winSound.Play();
                 Player2_result++;
                 button_player2_scoreBoard.Text = Player2_result.ToString();
             }

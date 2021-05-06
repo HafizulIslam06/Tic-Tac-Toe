@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Media;
 
 namespace TicTacToe
 {
@@ -17,6 +18,8 @@ namespace TicTacToe
             InitializeComponent();
         }
 
+        SoundPlayer MenubtnClickSound = new SoundPlayer(@"C:\Users\Hafiz\Downloads\TicTacToe\TicTacToe\bin\Debug\menubtnclick2.wav");
+
         Color mouseOverColor = Color.FromArgb(40, 116, 166);
         Color mouseOutColor = Color.FromArgb(27, 79, 114);
 
@@ -25,6 +28,7 @@ namespace TicTacToe
 
         private void button_exit_Click(object sender, EventArgs e)
         {
+            MenubtnClickSound.Play();
             DialogResult check;
             check = MessageBox.Show("Are you sure?", "Exit", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
             if (check == DialogResult.Yes)
@@ -63,8 +67,19 @@ namespace TicTacToe
         private void button_playWithFriend_Click(object sender, EventArgs e)
         {
             this.Hide();
+            MenubtnClickSound.Play();
             Form_PlayWithFriend frm_PlayWithFriend = new Form_PlayWithFriend();
             frm_PlayWithFriend.ShowDialog();
+        }
+
+        private void button_playWithComputer_Click(object sender, EventArgs e)
+        {
+            MenubtnClickSound.Play();
+        }
+
+        private void button_about_Click(object sender, EventArgs e)
+        {
+            MenubtnClickSound.Play();
         }
 
         private void panel1_MouseUp(object sender, MouseEventArgs e)
