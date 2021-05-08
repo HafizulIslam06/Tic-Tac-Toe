@@ -18,7 +18,7 @@ namespace TicTacToe
             InitializeComponent();
         }
 
-        SoundPlayer MenubtnClickSound = new SoundPlayer(@"C:\Users\Hafiz\Downloads\TicTacToe\TicTacToe\bin\Debug\menubtnclick2.wav");
+        SoundPlayer MenubtnClickSound = new SoundPlayer(@"C:\Users\Hafiz\Downloads\TicTacToe\TicTacToe\bin\Debug\click2.wav");
 
         Color mouseOverColor = Color.FromArgb(40, 116, 166);
         Color mouseOutColor = Color.FromArgb(27, 79, 114);
