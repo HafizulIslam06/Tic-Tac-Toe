@@ -25,17 +25,7 @@ namespace TicTacToe
 
         int mouseX = 0, mouseY = 0;
         bool mouseDown;
-
-        private void button_exit_Click(object sender, EventArgs e)
-        {
-            MenubtnClickSound.Play();
-            DialogResult check;
-            check = MessageBox.Show("Are you sure?", "Exit", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
-            if (check == DialogResult.Yes)
-            {
-                this.Close();
-            }            
-        }
+        
 
         private void panel1_MouseDown(object sender, MouseEventArgs e)
         {
@@ -75,6 +65,9 @@ namespace TicTacToe
         private void button_playWithComputer_Click(object sender, EventArgs e)
         {
             MenubtnClickSound.Play();
+            this.Hide();
+            Form_PlayWithComputer frm_PlayWithComputer = new Form_PlayWithComputer();
+            frm_PlayWithComputer.ShowDialog();
         }
 
         private void button_about_Click(object sender, EventArgs e)
