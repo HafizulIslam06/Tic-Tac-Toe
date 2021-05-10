@@ -132,7 +132,7 @@ namespace TicTacToe
             this.label_ComputerPlayer.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_ComputerPlayer.Location = new System.Drawing.Point(390, 42);
             this.label_ComputerPlayer.Name = "label_ComputerPlayer";
-            this.label_ComputerPlayer.Size = new System.Drawing.Size(189, 43);
+            this.label_ComputerPlayer.Size = new System.Drawing.Size(151, 34);
             this.label_ComputerPlayer.TabIndex = 33;
             this.label_ComputerPlayer.Text = "Computer";
             // 
@@ -201,7 +201,7 @@ namespace TicTacToe
             this.button_21.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(134)))), ((int)(((byte)(193)))));
             this.button_21.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_21.Font = new System.Drawing.Font("Gill Sans Ultra Bold", 40.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_21.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.button_21.ForeColor = System.Drawing.Color.Black;
             this.button_21.Location = new System.Drawing.Point(11, 424);
             this.button_21.Name = "button_21";
             this.button_21.Size = new System.Drawing.Size(173, 148);
@@ -217,7 +217,7 @@ namespace TicTacToe
             this.button_31.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(134)))), ((int)(((byte)(193)))));
             this.button_31.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_31.Font = new System.Drawing.Font("Gill Sans Ultra Bold", 40.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_31.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.button_31.ForeColor = System.Drawing.Color.Black;
             this.button_31.Location = new System.Drawing.Point(11, 578);
             this.button_31.Name = "button_31";
             this.button_31.Size = new System.Drawing.Size(173, 148);
@@ -233,7 +233,7 @@ namespace TicTacToe
             this.button_12.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(134)))), ((int)(((byte)(193)))));
             this.button_12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_12.Font = new System.Drawing.Font("Gill Sans Ultra Bold", 40.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.button_12.ForeColor = System.Drawing.Color.Black;
             this.button_12.Location = new System.Drawing.Point(190, 270);
             this.button_12.Name = "button_12";
             this.button_12.Size = new System.Drawing.Size(173, 148);
@@ -249,7 +249,7 @@ namespace TicTacToe
             this.button_13.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(134)))), ((int)(((byte)(193)))));
             this.button_13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_13.Font = new System.Drawing.Font("Gill Sans Ultra Bold", 40.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.button_13.ForeColor = System.Drawing.Color.Black;
             this.button_13.Location = new System.Drawing.Point(369, 270);
             this.button_13.Name = "button_13";
             this.button_13.Size = new System.Drawing.Size(173, 148);
@@ -265,7 +265,7 @@ namespace TicTacToe
             this.button_32.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(134)))), ((int)(((byte)(193)))));
             this.button_32.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_32.Font = new System.Drawing.Font("Gill Sans Ultra Bold", 40.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_32.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.button_32.ForeColor = System.Drawing.Color.Black;
             this.button_32.Location = new System.Drawing.Point(190, 578);
             this.button_32.Name = "button_32";
             this.button_32.Size = new System.Drawing.Size(173, 148);
@@ -281,7 +281,7 @@ namespace TicTacToe
             this.button_23.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(134)))), ((int)(((byte)(193)))));
             this.button_23.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_23.Font = new System.Drawing.Font("Gill Sans Ultra Bold", 40.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_23.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.button_23.ForeColor = System.Drawing.Color.Black;
             this.button_23.Location = new System.Drawing.Point(369, 424);
             this.button_23.Name = "button_23";
             this.button_23.Size = new System.Drawing.Size(173, 148);
@@ -297,7 +297,7 @@ namespace TicTacToe
             this.button_33.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(134)))), ((int)(((byte)(193)))));
             this.button_33.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_33.Font = new System.Drawing.Font("Gill Sans Ultra Bold", 40.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_33.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.button_33.ForeColor = System.Drawing.Color.Black;
             this.button_33.Location = new System.Drawing.Point(369, 578);
             this.button_33.Name = "button_33";
             this.button_33.Size = new System.Drawing.Size(173, 148);
@@ -313,7 +313,7 @@ namespace TicTacToe
             this.button_22.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(134)))), ((int)(((byte)(193)))));
             this.button_22.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_22.Font = new System.Drawing.Font("Gill Sans Ultra Bold", 40.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_22.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.button_22.ForeColor = System.Drawing.Color.Black;
             this.button_22.Location = new System.Drawing.Point(190, 424);
             this.button_22.Name = "button_22";
             this.button_22.Size = new System.Drawing.Size(173, 148);
@@ -329,7 +329,7 @@ namespace TicTacToe
             this.button_11.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(134)))), ((int)(((byte)(193)))));
             this.button_11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_11.Font = new System.Drawing.Font("Gill Sans Ultra Bold", 40.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.button_11.ForeColor = System.Drawing.Color.Black;
             this.button_11.Location = new System.Drawing.Point(11, 270);
             this.button_11.Name = "button_11";
             this.button_11.Size = new System.Drawing.Size(173, 148);

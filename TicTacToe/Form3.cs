@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Media;
-
+using System.Threading;
 
 namespace TicTacToe
 {
@@ -28,8 +28,8 @@ namespace TicTacToe
         Color Color_unselected = Color.FromArgb(23, 32, 42);
 
         int count = 0;
-        //int Player1_result = 0;
-        //int Player2_result = 0;
+        int Player1_result = 0;
+        int Player2_result = 0;
 
         private void button_Exit_Click(object sender, EventArgs e)
         {
@@ -104,30 +104,39 @@ namespace TicTacToe
                 ((Button)btn).Enabled = false;
                 count++;
             }
+            CheckResultForX();
 
-            ComputerPlayer();            
+            int milliseconds = 1000;
+            Thread.Sleep(milliseconds);
+
+            ComputerPlayer();
+            CheckResultForY();
+            Drawcheck();
         }
 
         private void ComputerPlayer()
         {
             if (count % 2 != 0)
             {
+                winingChance();
+            }
+            if (count % 2 != 0)
+            {
                 Defense();
             }
             if (count % 2 != 0)
             {
-                winingChance();               
-            }
-            if (count % 2 != 0)
-            {
-                MessageBox.Show("3rd start");
                 if (button_22.Text == "")
                 {
+                    player2sound.Play();
+
                     button_22.Text = "0";
                     button_22.Enabled = false;
                 }
-                else
+                else if (button_11.Text == "" || button_13.Text == "" || button_31.Text == "" || button_33.Text == "")
                 {
+                    player2sound.Play();
+
                     if (button_11.Text == "")
                     {
                         button_11.Text = "0";
@@ -145,17 +154,37 @@ namespace TicTacToe
                         button_33.Text = "0";
                     }
                 }
+                else
+                {
+                    player2sound.Play();
+
+                    if (button_12.Text == "")
+                    {
+                        button_12.Text = "0";
+                    }
+                    else if (button_21.Text == "")
+                    {
+                        button_21.Text = "0";
+                    }
+                    else if (button_32.Text == "")
+                    {
+                        button_32.Text = "0";
+                    }
+                    else if (button_23.Text == "")
+                    {
+                        button_23.Text = "0";
+                    }
+                }
                 count++;
-                MessageBox.Show("3rd finish");
             }
         }
 
         private void winingChance()
         {
-            MessageBox.Show("===wining start===");
             //1st row check=========================
             if (button_11.Text == "0" && button_12.Text == "0" && button_13.Text == "" || button_11.Text == "0" && button_13.Text == "0" && button_12.Text == "" || button_12.Text == "0" && button_13.Text == "0" && button_11.Text == "")
             {
+                player2sound.Play();
                 if (button_11.Text == "")
                 {
                     button_11.Text = "0";
@@ -172,11 +201,11 @@ namespace TicTacToe
                     button_13.Enabled = false;
                 }
                 count++;
-                MessageBox.Show("=======1r======");
             }
             //2nd row check
             else if (button_21.Text == "0" && button_22.Text == "0" && button_23.Text == "" || button_21.Text == "0" && button_23.Text == "0" && button_22.Text == "" || button_22.Text == "0" && button_23.Text == "0" && button_21.Text == "")
             {
+                player2sound.Play();
                 if (button_21.Text == "")
                 {
                     button_21.Text = "0";
@@ -193,11 +222,11 @@ namespace TicTacToe
                     button_23.Enabled = false;
                 }
                 count++;
-                MessageBox.Show("=======2r======");
             }
             //3rd row check
             else if (button_31.Text == "0" && button_32.Text == "0" && button_33.Text == "" || button_31.Text == "0" && button_33.Text == "0" && button_32.Text == "" || button_32.Text == "0" && button_33.Text == "0" && button_31.Text == "")
             {
+                player2sound.Play();
                 if (button_31.Text == "")
                 {
                     button_31.Text = "0";
@@ -214,11 +243,11 @@ namespace TicTacToe
                     button_33.Enabled = false;
                 }
                 count++;
-                MessageBox.Show("=====3r========");
             }
             //1st Column check=========
             else if (button_11.Text == "0" && button_21.Text == "0" && button_31.Text == "" || button_11.Text == "0" && button_31.Text == "0" && button_21.Text == "" || button_21.Text == "0" && button_31.Text == "0" && button_11.Text == "")
             {
+                player2sound.Play();
                 if (button_11.Text == "")
                 {
                     button_11.Text = "0";
@@ -235,11 +264,11 @@ namespace TicTacToe
                     button_31.Enabled = false;
                 }
                 count++;
-                MessageBox.Show("=======1c======");
             }
             //2nd Column check
             else if (button_12.Text == "0" && button_22.Text == "0" && button_32.Text == "" || button_12.Text == "0" && button_32.Text == "0" && button_22.Text == "" || button_22.Text == "0" && button_32.Text == "0" && button_12.Text == "")
             {
+                player2sound.Play();
                 if (button_12.Text == "")
                 {
                     button_12.Text = "0";
@@ -256,11 +285,11 @@ namespace TicTacToe
                     button_32.Enabled = false;
                 }
                 count++;
-                MessageBox.Show("======2c=======");
             }
             //3rd Column check
             else if (button_13.Text == "0" && button_23.Text == "0" && button_33.Text == "" || button_13.Text == "0" && button_33.Text == "0" && button_23.Text == "" || button_23.Text == "0" && button_33.Text == "0" && button_13.Text == "")
             {
+                player2sound.Play();
                 if (button_13.Text == "")
                 {
                     button_13.Text = "0";
@@ -277,11 +306,11 @@ namespace TicTacToe
                     button_33.Enabled = false;
                 }
                 count++;
-                MessageBox.Show("=======3c======");
             }
             //1st cross check=======
             else if (button_11.Text == "0" && button_22.Text == "0" && button_33.Text == "" || button_11.Text == "0" && button_33.Text == "0" && button_22.Text == "" || button_22.Text == "0" && button_33.Text == "0" && button_11.Text == "")
             {
+                player2sound.Play();
                 if (button_11.Text == "")
                 {
                     button_11.Text = "0";
@@ -298,11 +327,11 @@ namespace TicTacToe
                     button_33.Enabled = false;
                 }
                 count++;
-                MessageBox.Show("======1x=======");
             }
             //2nd cross check
             else if (button_13.Text == "0" && button_22.Text == "0" && button_31.Text == "" || button_13.Text == "0" && button_31.Text == "0" && button_22.Text == "" || button_22.Text == "0" && button_31.Text == "0" && button_13.Text == "")
             {
+                player2sound.Play();
                 if (button_13.Text == "")
                 {
                     button_13.Text = "0";
@@ -319,11 +348,6 @@ namespace TicTacToe
                     button_31.Enabled = false;
                 }
                 count++;
-                MessageBox.Show("=======2x======");
-            }
-            else
-            {
-                MessageBox.Show("wining finised");
             }
         }
 
@@ -374,10 +398,10 @@ namespace TicTacToe
 
         private void Defense()
         {
-            MessageBox.Show("defense start");
             //1st row check=========================
             if (button_11.Text == "X" && button_12.Text == "X" && button_13.Text==""|| button_11.Text == "X" && button_13.Text == "X" &&button_12.Text=="" || button_12.Text == "X" && button_13.Text == "X" && button_11.Text=="")
             {
+                player2sound.Play();
                 if (button_11.Text == "")
                 {
                     button_11.Text = "0";
@@ -394,11 +418,11 @@ namespace TicTacToe
                     button_13.Enabled = false;
                 }
                 count++;
-                MessageBox.Show("=======1r======");
             }
             //2nd row check
             else if (button_21.Text == "X" && button_22.Text == "X" && button_23.Text=="" || button_21.Text == "X" && button_23.Text == "X" && button_22.Text==""|| button_22.Text == "X" && button_23.Text == "X" && button_21.Text=="")
             {
+                player2sound.Play();
                 if (button_21.Text == "")
                 {
                     button_21.Text = "0";
@@ -415,11 +439,11 @@ namespace TicTacToe
                     button_23.Enabled = false;
                 }
                 count++;
-                MessageBox.Show("=======2r======");
             }
             //3rd row check
             else if (button_31.Text == "X" && button_32.Text == "X" && button_33 .Text=="" || button_31.Text == "X" && button_33.Text == "X" && button_32.Text=="" || button_32.Text == "X" && button_33.Text == "X" && button_31.Text=="")
             {
+                player2sound.Play();
                 if (button_31.Text == "")
                 {
                     button_31.Text = "0";
@@ -436,11 +460,11 @@ namespace TicTacToe
                     button_33.Enabled = false;
                 }
                 count++;
-                MessageBox.Show("=====3r========");
             }
             //1st Column check=========
             else if (button_11.Text == "X" && button_21.Text == "X" && button_31.Text==""|| button_11.Text == "X" && button_31.Text == "X" && button_21.Text==""|| button_21.Text == "X" && button_31.Text == "X" && button_11.Text=="")
             {
+                player2sound.Play();
                 if (button_11.Text == "")
                 {
                     button_11.Text = "0";
@@ -457,11 +481,11 @@ namespace TicTacToe
                     button_31.Enabled = false;
                 }
                 count++;
-                MessageBox.Show("=======1c======");
             }
             //2nd Column check
             else if (button_12.Text == "X" && button_22.Text == "X" && button_32.Text==""|| button_12.Text == "X" && button_32.Text == "X" && button_22.Text==""|| button_22.Text == "X" && button_32.Text == "X" && button_12.Text=="")
             {
+                player2sound.Play();
                 if (button_12.Text == "")
                 {
                     button_12.Text = "0";
@@ -478,11 +502,11 @@ namespace TicTacToe
                     button_32.Enabled = false;
                 }
                 count++;
-                MessageBox.Show("======2c=======");
             }
             //3rd Column check
             else if (button_13.Text == "X" && button_23.Text == "X" && button_33.Text==""|| button_13.Text == "X" && button_33.Text == "X" && button_23.Text==""|| button_23.Text == "X" && button_33.Text == "X" && button_13.Text=="")
             {
+                player2sound.Play();
                 if (button_13.Text == "")
                 {
                     button_13.Text = "0";
@@ -499,11 +523,11 @@ namespace TicTacToe
                     button_33.Enabled = false;
                 }
                 count++;
-                MessageBox.Show("=======3c======");
             }
             //1st cross check=======
             else if (button_11.Text == "X" && button_22.Text == "X" && button_33.Text==""|| button_11.Text == "X" && button_33.Text == "X" && button_22.Text==""|| button_22.Text == "X" && button_33.Text == "X" && button_11.Text=="")
             {
+                player2sound.Play();
                 if (button_11.Text == "")
                 {
                     button_11.Text = "0";
@@ -520,11 +544,11 @@ namespace TicTacToe
                     button_33.Enabled = false;
                 }
                 count++;
-                MessageBox.Show("======1x=======");
             }
             //2nd cross check
             else if (button_13.Text == "X" && button_22.Text == "X" && button_31.Text==""|| button_13.Text == "X" && button_31.Text == "X" && button_22.Text==""|| button_22.Text == "X" && button_31.Text == "X" && button_13.Text=="")
             {
+                player2sound.Play();
                 if (button_13.Text == "")
                 {
                     button_13.Text = "0";
@@ -541,70 +565,162 @@ namespace TicTacToe
                     button_31.Enabled = false;
                 }
                 count++;
-                MessageBox.Show("=======2x======");
-            }
-            else
-            {
-                MessageBox.Show("Defense finised");
             }
         }
 
-        //private void CheckResult(string symbol)
-        //{
-        //    //===================Row=====================
-        //    if (button_11.Text == symbol && button_12.Text == symbol && button_13.Text == symbol)
-        //    {
-        //        MessageBox.Show(symbol + " win", "Result");
-        //        //ResultBoard(symbol);
-        //        reset();
-        //    }
-        //    else if (button_21.Text == symbol && button_22.Text == symbol && button_23.Text == symbol)
-        //    {
-        //        MessageBox.Show(symbol + " win", "Result");
-        //        //ResultBoard(symbol);
-        //        reset();
-        //    }
-        //    else if (button_31.Text == symbol && button_32.Text == symbol && button_33.Text == symbol)
-        //    {
-        //        MessageBox.Show(symbol + " win", "Result");
-        //        //ResultBoard(symbol);
-        //        reset();
-        //    }
+        private void CheckResultForX()
+        {
+            //===================Row=====================
+            if (button_11.Text == "X" && button_12.Text == "X" && button_13.Text == "X")
+            {
+                winSound.Play();
+                MessageBox.Show("X win", "Result");
+                reset();
+                ResultBoard("X");               
+            }
+            else if (button_21.Text == "X" && button_22.Text == "X" && button_23.Text == "X")
+            {
+                winSound.Play();
+                MessageBox.Show("X win", "Result");
+                reset();
+                ResultBoard("X");                
+            }
+            else if (button_31.Text == "X" && button_32.Text == "X" && button_33.Text == "X")
+            {
+                winSound.Play();
+                MessageBox.Show("X win", "Result");
+                reset();
+                ResultBoard("X");                
+            }
 
-        //    //=====================Column==================
-        //    else if (button_11.Text == symbol && button_21.Text == symbol && button_31.Text == symbol)
-        //    {
-        //        MessageBox.Show(symbol + " win", "Result");
-        //        //ResultBoard(symbol);
-        //        reset();
-        //    }
-        //    else if (button_12.Text == symbol && button_22.Text == symbol && button_32.Text == symbol)
-        //    {
-        //        MessageBox.Show(symbol + " win", "Result");
-        //        //ResultBoard(symbol);
-        //        reset();
-        //    }
-        //    else if (button_13.Text == symbol && button_23.Text == symbol && button_33.Text == symbol)
-        //    {
-        //        MessageBox.Show(symbol + " win", "Result");
-        //        //ResultBoard(symbol);
-        //        reset();
-        //    }
+            //=====================Column==================
+            else if (button_11.Text == "X" && button_21.Text == "X" && button_31.Text == "X")
+            {
+                winSound.Play();
+                MessageBox.Show("X win", "Result");
+                reset();
+                ResultBoard("X");                
+            }
+            else if (button_12.Text == "X" && button_22.Text == "X" && button_32.Text == "X")
+            {
+                winSound.Play();
+                MessageBox.Show("X win", "Result");
+                reset();
+                ResultBoard("X");                
+            }
+            else if (button_13.Text == "X" && button_23.Text == "X" && button_33.Text == "X")
+            {
+                winSound.Play();
+                MessageBox.Show("X win", "Result");
+                reset();
+                ResultBoard("X");                
+            }
 
-        //    //=======================Cross==================
-        //    else if (button_11.Text == symbol && button_22.Text == symbol && button_33.Text == symbol)
-        //    {
-        //        MessageBox.Show(symbol + " win", "Result");
-        //        //ResultBoard(symbol);
-        //        reset();
-        //    }
-        //    else if (button_31.Text == symbol && button_22.Text == symbol && button_13.Text == symbol)
-        //    {
-        //        MessageBox.Show(symbol + " win", "Result");
-        //        //ResultBoard(symbol);
-        //        reset();
-        //    }
-        //}
+            //=======================Cross==================
+            else if (button_11.Text == "X" && button_22.Text == "X" && button_33.Text == "X")
+            {
+                winSound.Play();
+                MessageBox.Show("X win", "Result");
+                reset();
+                ResultBoard("X");                
+            }
+            else if (button_31.Text == "X" && button_22.Text == "X" && button_13.Text == "X")
+            {
+                winSound.Play();
+                MessageBox.Show("X win", "Result");
+                reset();
+                ResultBoard("X");                
+            }
+        }
 
+        private void ResultBoard(string v)
+        {
+            if (v == "X")
+            {
+                Player1_result = Player1_result + 1;
+                button_player1_scoreBoard.Text = Player1_result.ToString();
+            }
+            else if (v == "0")
+            {
+                Player2_result = Player2_result + 1;
+                button_player2_scoreBoard.Text = Player2_result.ToString();
+            }
+        }
+
+        private void CheckResultForY()
+        {
+            //===================Row=====================
+            if (button_11.Text == "0" && button_12.Text == "0" && button_13.Text == "0")
+            {
+                winSound.Play();
+                MessageBox.Show("0 win", "Result");
+                reset();
+                ResultBoard("0");                
+            }
+            else if (button_21.Text == "0" && button_22.Text == "0" && button_23.Text == "0")
+            {
+                winSound.Play();
+                MessageBox.Show("0 win", "Result");
+                reset();
+                ResultBoard("0");                
+            }
+            else if (button_31.Text == "0" && button_32.Text == "0" && button_33.Text == "0")
+            {
+                winSound.Play();
+                MessageBox.Show("0 win", "Result");
+                reset();
+                ResultBoard("0");                
+            }
+
+            //=====================Column==================
+            else if (button_11.Text == "0" && button_21.Text == "0" && button_31.Text == "0")
+            {
+                winSound.Play();
+                MessageBox.Show("0 win", "Result");
+                reset();
+                ResultBoard("0");                
+            }
+            else if (button_12.Text == "0" && button_22.Text == "0" && button_32.Text == "0")
+            {
+                winSound.Play();
+                MessageBox.Show("0 win", "Result");
+                reset();
+                ResultBoard("0");                
+            }
+            else if (button_13.Text == "0" && button_23.Text == "0" && button_33.Text == "0")
+            {
+                winSound.Play();
+                MessageBox.Show("0 win", "Result");
+                reset();
+                ResultBoard("0");                
+            }
+
+            //=======================Cross==================
+            else if (button_11.Text == "0" && button_22.Text == "0" && button_33.Text == "0")
+            {
+                winSound.Play();
+                MessageBox.Show("0 win", "Result");
+                reset();
+                ResultBoard("0");
+                
+            }
+            else if (button_31.Text == "0" && button_22.Text == "0" && button_13.Text == "0")
+            {
+                winSound.Play();
+                MessageBox.Show("0 win", "Result");
+                reset();
+                ResultBoard("0");                
+            }
+        }        
+
+        private void Drawcheck()
+        {
+            if (button_11.Text!="" && button_12.Text!="" && button_13.Text != "" && button_21.Text != "" && button_22.Text != "" && button_23.Text != "" && button_31.Text != "" && button_32.Text != "" && button_33.Text != "")
+            {
+                winSound.Play();
+                MessageBox.Show("Draw","Result");
+                reset();
+            }
+        }
     }
 }

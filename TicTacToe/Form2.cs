@@ -118,6 +118,7 @@ namespace TicTacToe
                 count++;
             }
             CheckResult(((Button)btn).Text);
+            Drawcheck();
         }
 
         private void CheckResult(string symbol)
@@ -175,6 +176,15 @@ namespace TicTacToe
                 ResultBoard(symbol);
                 reset();
             }            
+        }
+
+        private void Drawcheck()
+        {
+            if (button_11.Text != "" && button_12.Text != "" && button_13.Text != "" && button_21.Text != "" && button_22.Text != "" && button_23.Text != "" && button_31.Text != "" && button_32.Text != "" && button_33.Text != "")
+            {
+                MessageBox.Show("Draw", "Result");
+                reset();
+            }
         }
 
         private void ResultBoard(string symbol)
