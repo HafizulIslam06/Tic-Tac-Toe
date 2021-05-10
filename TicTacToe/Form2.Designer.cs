@@ -218,7 +218,9 @@ namespace TicTacToe
             // 
             // button_Reset
             // 
+            this.button_Reset.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(180)))), ((int)(((byte)(99)))));
             this.button_Reset.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.button_Reset.FlatAppearance.BorderSize = 0;
             this.button_Reset.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(134)))), ((int)(((byte)(193)))));
             this.button_Reset.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_Reset.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -233,12 +235,14 @@ namespace TicTacToe
             this.button_Reset.TabStop = false;
             this.button_Reset.Text = "  Reset";
             this.button_Reset.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button_Reset.UseVisualStyleBackColor = true;
+            this.button_Reset.UseVisualStyleBackColor = false;
             this.button_Reset.Click += new System.EventHandler(this.button_Reset_Click);
             // 
             // button_Exit
             // 
+            this.button_Exit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(76)))), ((int)(((byte)(60)))));
             this.button_Exit.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.button_Exit.FlatAppearance.BorderSize = 0;
             this.button_Exit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(134)))), ((int)(((byte)(193)))));
             this.button_Exit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_Exit.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -253,12 +257,14 @@ namespace TicTacToe
             this.button_Exit.TabStop = false;
             this.button_Exit.Text = "  Exit";
             this.button_Exit.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button_Exit.UseVisualStyleBackColor = true;
+            this.button_Exit.UseVisualStyleBackColor = false;
             this.button_Exit.Click += new System.EventHandler(this.button_Exit_Click);
             // 
             // button_Back
             // 
+            this.button_Back.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
             this.button_Back.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.button_Back.FlatAppearance.BorderSize = 0;
             this.button_Back.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(134)))), ((int)(((byte)(193)))));
             this.button_Back.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_Back.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -273,7 +279,7 @@ namespace TicTacToe
             this.button_Back.TabStop = false;
             this.button_Back.Text = "  Back";
             this.button_Back.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button_Back.UseVisualStyleBackColor = true;
+            this.button_Back.UseVisualStyleBackColor = false;
             this.button_Back.Click += new System.EventHandler(this.button_Back_Click);
             // 
             // label_player1
