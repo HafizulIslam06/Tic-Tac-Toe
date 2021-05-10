@@ -29,6 +29,8 @@ namespace TicTacToe
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_PlayWithFriend));
             this.button_11 = new System.Windows.Forms.Button();
             this.button_22 = new System.Windows.Forms.Button();
             this.button_33 = new System.Windows.Forms.Button();
@@ -49,6 +51,7 @@ namespace TicTacToe
             this.button_player1_scoreBoard = new System.Windows.Forms.Button();
             this.button_player2_scoreBoard = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.imageList3 = new System.Windows.Forms.ImageList(this.components);
             this.SuspendLayout();
             // 
             // button_11
@@ -219,13 +222,17 @@ namespace TicTacToe
             this.button_Reset.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(134)))), ((int)(((byte)(193)))));
             this.button_Reset.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_Reset.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_Reset.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.button_Reset.ForeColor = System.Drawing.Color.White;
+            this.button_Reset.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button_Reset.ImageIndex = 2;
+            this.button_Reset.ImageList = this.imageList3;
             this.button_Reset.Location = new System.Drawing.Point(9, 780);
             this.button_Reset.Name = "button_Reset";
             this.button_Reset.Size = new System.Drawing.Size(172, 47);
             this.button_Reset.TabIndex = 9;
             this.button_Reset.TabStop = false;
-            this.button_Reset.Text = "Reset";
+            this.button_Reset.Text = "  Reset";
+            this.button_Reset.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button_Reset.UseVisualStyleBackColor = true;
             this.button_Reset.Click += new System.EventHandler(this.button_Reset_Click);
             // 
@@ -235,13 +242,17 @@ namespace TicTacToe
             this.button_Exit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(134)))), ((int)(((byte)(193)))));
             this.button_Exit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_Exit.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_Exit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.button_Exit.ForeColor = System.Drawing.Color.White;
+            this.button_Exit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button_Exit.ImageIndex = 1;
+            this.button_Exit.ImageList = this.imageList3;
             this.button_Exit.Location = new System.Drawing.Point(368, 780);
             this.button_Exit.Name = "button_Exit";
             this.button_Exit.Size = new System.Drawing.Size(172, 47);
             this.button_Exit.TabIndex = 10;
             this.button_Exit.TabStop = false;
-            this.button_Exit.Text = "Exit";
+            this.button_Exit.Text = "  Exit";
+            this.button_Exit.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button_Exit.UseVisualStyleBackColor = true;
             this.button_Exit.Click += new System.EventHandler(this.button_Exit_Click);
             // 
@@ -251,13 +262,17 @@ namespace TicTacToe
             this.button_Back.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(134)))), ((int)(((byte)(193)))));
             this.button_Back.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_Back.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_Back.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.button_Back.ForeColor = System.Drawing.Color.White;
+            this.button_Back.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button_Back.ImageIndex = 0;
+            this.button_Back.ImageList = this.imageList3;
             this.button_Back.Location = new System.Drawing.Point(189, 780);
             this.button_Back.Name = "button_Back";
             this.button_Back.Size = new System.Drawing.Size(172, 47);
             this.button_Back.TabIndex = 11;
             this.button_Back.TabStop = false;
-            this.button_Back.Text = "Back";
+            this.button_Back.Text = "  Back";
+            this.button_Back.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button_Back.UseVisualStyleBackColor = true;
             this.button_Back.Click += new System.EventHandler(this.button_Back_Click);
             // 
@@ -265,6 +280,7 @@ namespace TicTacToe
             // 
             this.label_player1.AutoSize = true;
             this.label_player1.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_player1.ForeColor = System.Drawing.Color.White;
             this.label_player1.Location = new System.Drawing.Point(34, 52);
             this.label_player1.Name = "label_player1";
             this.label_player1.Size = new System.Drawing.Size(123, 34);
@@ -275,6 +291,7 @@ namespace TicTacToe
             // 
             this.label_player2.AutoSize = true;
             this.label_player2.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_player2.ForeColor = System.Drawing.Color.White;
             this.label_player2.Location = new System.Drawing.Point(388, 52);
             this.label_player2.Name = "label_player2";
             this.label_player2.Size = new System.Drawing.Size(123, 34);
@@ -314,6 +331,7 @@ namespace TicTacToe
             // 
             this.label_score.AutoSize = true;
             this.label_score.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_score.ForeColor = System.Drawing.Color.White;
             this.label_score.Location = new System.Drawing.Point(205, 39);
             this.label_score.Name = "label_score";
             this.label_score.Size = new System.Drawing.Size(132, 47);
@@ -355,6 +373,14 @@ namespace TicTacToe
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(6, 83);
             this.panel1.TabIndex = 19;
+            // 
+            // imageList3
+            // 
+            this.imageList3.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList3.ImageStream")));
+            this.imageList3.TransparentColor = System.Drawing.Color.Transparent;
+            this.imageList3.Images.SetKeyName(0, "arrow-left-5-xxl.png");
+            this.imageList3.Images.SetKeyName(1, "cancel-xxl.png");
+            this.imageList3.Images.SetKeyName(2, "refresh-2-xxl.png");
             // 
             // Form_PlayWithFriend
             // 
@@ -414,5 +440,6 @@ namespace TicTacToe
         private System.Windows.Forms.Button button_player1_scoreBoard;
         private System.Windows.Forms.Button button_player2_scoreBoard;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.ImageList imageList3;
     }
 }

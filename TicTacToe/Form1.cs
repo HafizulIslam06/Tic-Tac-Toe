@@ -75,6 +75,11 @@ namespace TicTacToe
             MenubtnClickSound.Play();
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            MenubtnClickSound.Play();
+        }
+
         private void panel1_MouseUp(object sender, MouseEventArgs e)
         {
             mouseDown = false;
