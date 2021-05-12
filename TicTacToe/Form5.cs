@@ -19,7 +19,9 @@ namespace TicTacToe
 
         private void button_X_Click(object sender, EventArgs e)
         {
-            this.Close();
+            this.Hide();
+            Form_HomeScreen frm_hmScreen = new Form_HomeScreen();
+            frm_hmScreen.ShowDialog();
         }
     }
 }

@@ -16,6 +16,9 @@ namespace TicTacToe
         public Form_HomeScreen()
         {
             InitializeComponent();
+
+            SoundPlayer themesong = new SoundPlayer(@"C:\Users\Hafiz\Downloads\TicTacToe\TicTacToe\bin\Debug\ThemeSong.wav");
+            themesong.Play();
         }
 
         SoundPlayer MenubtnClickSound = new SoundPlayer(@"C:\Users\Hafiz\Downloads\TicTacToe\TicTacToe\bin\Debug\click2.wav");
@@ -74,7 +77,7 @@ namespace TicTacToe
         {
             MenubtnClickSound.Play();
             Form4 frm_help = new Form4();
-            frm_help.Show();
+            frm_help.ShowDialog();
         }
 
         private void button1_Click(object sender, EventArgs e)
