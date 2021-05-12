@@ -10,3 +10,4 @@ C:\Users\Hafiz\Downloads\TicTacToe\TicTacToe\obj\Debug\TicTacToe.pdb
 C:\Users\Hafiz\Downloads\TicTacToe\TicTacToe\obj\Debug\TicTacToe.Form_HomeScreen.resources
 C:\Users\Hafiz\Downloads\TicTacToe\TicTacToe\obj\Debug\TicTacToe.Form_PlayWithFriend.resources
 C:\Users\Hafiz\Downloads\TicTacToe\TicTacToe\obj\Debug\TicTacToe.Form_PlayWithComputer.resources
+C:\Users\Hafiz\Downloads\TicTacToe\TicTacToe\obj\Debug\TicTacToe.Form4.resources

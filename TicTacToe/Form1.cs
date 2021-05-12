@@ -73,6 +73,8 @@ namespace TicTacToe
         private void button_about_Click(object sender, EventArgs e)
         {
             MenubtnClickSound.Play();
+            Form4 frm_help = new Form4();
+            frm_help.Show();
         }
 
         private void button1_Click(object sender, EventArgs e)

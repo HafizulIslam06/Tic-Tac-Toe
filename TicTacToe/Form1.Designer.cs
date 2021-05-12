@@ -41,13 +41,13 @@ namespace TicTacToe
             this.pictureBox_NumGames = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_NumGames)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // button_playWithComputer
@@ -63,7 +63,7 @@ namespace TicTacToe
             this.button_playWithComputer.ImageList = this.imageList1;
             this.button_playWithComputer.Location = new System.Drawing.Point(103, 448);
             this.button_playWithComputer.Name = "button_playWithComputer";
-            this.button_playWithComputer.Size = new System.Drawing.Size(340, 55);
+            this.button_playWithComputer.Size = new System.Drawing.Size(348, 55);
             this.button_playWithComputer.TabIndex = 0;
             this.button_playWithComputer.TabStop = false;
             this.button_playWithComputer.Text = "   NEW GAME";
@@ -94,7 +94,7 @@ namespace TicTacToe
             this.button_playWithFriend.ImageList = this.imageList1;
             this.button_playWithFriend.Location = new System.Drawing.Point(103, 519);
             this.button_playWithFriend.Name = "button_playWithFriend";
-            this.button_playWithFriend.Size = new System.Drawing.Size(340, 55);
+            this.button_playWithFriend.Size = new System.Drawing.Size(348, 55);
             this.button_playWithFriend.TabIndex = 1;
             this.button_playWithFriend.TabStop = false;
             this.button_playWithFriend.Text = "   MULTIPLAYER";
@@ -115,7 +115,7 @@ namespace TicTacToe
             this.button_Help.ImageList = this.imageList1;
             this.button_Help.Location = new System.Drawing.Point(103, 665);
             this.button_Help.Name = "button_Help";
-            this.button_Help.Size = new System.Drawing.Size(340, 55);
+            this.button_Help.Size = new System.Drawing.Size(348, 55);
             this.button_Help.TabIndex = 2;
             this.button_Help.TabStop = false;
             this.button_Help.Text = "   HELP";
@@ -143,7 +143,7 @@ namespace TicTacToe
             this.button_X.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_X.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_X.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.button_X.Location = new System.Drawing.Point(498, 0);
+            this.button_X.Location = new System.Drawing.Point(497, 0);
             this.button_X.Name = "button_X";
             this.button_X.Size = new System.Drawing.Size(58, 49);
             this.button_X.TabIndex = 0;
@@ -185,7 +185,7 @@ namespace TicTacToe
             this.button1.ImageList = this.imageList1;
             this.button1.Location = new System.Drawing.Point(103, 594);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(340, 55);
+            this.button1.Size = new System.Drawing.Size(348, 55);
             this.button1.TabIndex = 14;
             this.button1.TabStop = false;
             this.button1.Text = "   SETTINGS";
@@ -195,33 +195,33 @@ namespace TicTacToe
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::TicTacToe.Properties.Resources._2;
-            this.pictureBox1.Location = new System.Drawing.Point(103, 85);
+            this.pictureBox1.Image = global::TicTacToe.Properties.Resources.X;
+            this.pictureBox1.Location = new System.Drawing.Point(252, 61);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(237, 215);
+            this.pictureBox1.Size = new System.Drawing.Size(191, 222);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox1.TabIndex = 15;
             this.pictureBox1.TabStop = false;
             // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::TicTacToe.Properties.Resources.MicrosoftTeams_image__1_;
-            this.pictureBox3.Location = new System.Drawing.Point(70, 306);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(434, 49);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 12;
-            this.pictureBox3.TabStop = false;
-            // 
             // pictureBox2
             // 
-            this.pictureBox2.Image = global::TicTacToe.Properties.Resources._3;
-            this.pictureBox2.Location = new System.Drawing.Point(266, 85);
+            this.pictureBox2.Image = global::TicTacToe.Properties.Resources.TicTacToe;
+            this.pictureBox2.Location = new System.Drawing.Point(33, 289);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(177, 215);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox2.Size = new System.Drawing.Size(490, 66);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 16;
             this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::TicTacToe.Properties.Resources._0;
+            this.pictureBox3.Location = new System.Drawing.Point(103, 61);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(206, 222);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox3.TabIndex = 17;
+            this.pictureBox3.TabStop = false;
             // 
             // Form_HomeScreen
             // 
@@ -229,10 +229,10 @@ namespace TicTacToe
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(79)))), ((int)(((byte)(114)))));
             this.ClientSize = new System.Drawing.Size(556, 842);
-            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBox3);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.label_nubGames);
             this.Controls.Add(this.pictureBox_NumGames);
             this.Controls.Add(this.panel1);
@@ -246,8 +246,8 @@ namespace TicTacToe
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_NumGames)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -263,10 +263,10 @@ namespace TicTacToe
         private System.Windows.Forms.Label label_nubGames;
         private System.Windows.Forms.Button button_X;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.ImageList imageList1;
-        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBox3;
     }
 }
 
