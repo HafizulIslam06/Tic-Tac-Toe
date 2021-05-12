@@ -41,6 +41,7 @@ namespace TicTacToe
             this.button_31 = new System.Windows.Forms.Button();
             this.button_21 = new System.Windows.Forms.Button();
             this.button_Reset = new System.Windows.Forms.Button();
+            this.imageList3 = new System.Windows.Forms.ImageList(this.components);
             this.button_Exit = new System.Windows.Forms.Button();
             this.button_Back = new System.Windows.Forms.Button();
             this.label_player1 = new System.Windows.Forms.Label();
@@ -51,7 +52,6 @@ namespace TicTacToe
             this.button_player1_scoreBoard = new System.Windows.Forms.Button();
             this.button_player2_scoreBoard = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.imageList3 = new System.Windows.Forms.ImageList(this.components);
             this.SuspendLayout();
             // 
             // button_11
@@ -221,7 +221,7 @@ namespace TicTacToe
             this.button_Reset.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(180)))), ((int)(((byte)(99)))));
             this.button_Reset.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.button_Reset.FlatAppearance.BorderSize = 0;
-            this.button_Reset.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(134)))), ((int)(((byte)(193)))));
+            this.button_Reset.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(214)))), ((int)(((byte)(141)))));
             this.button_Reset.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_Reset.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_Reset.ForeColor = System.Drawing.Color.White;
@@ -238,12 +238,20 @@ namespace TicTacToe
             this.button_Reset.UseVisualStyleBackColor = false;
             this.button_Reset.Click += new System.EventHandler(this.button_Reset_Click);
             // 
+            // imageList3
+            // 
+            this.imageList3.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList3.ImageStream")));
+            this.imageList3.TransparentColor = System.Drawing.Color.Transparent;
+            this.imageList3.Images.SetKeyName(0, "arrow-left-5-xxl.png");
+            this.imageList3.Images.SetKeyName(1, "cancel-xxl.png");
+            this.imageList3.Images.SetKeyName(2, "refresh-2-xxl.png");
+            // 
             // button_Exit
             // 
             this.button_Exit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(76)))), ((int)(((byte)(60)))));
             this.button_Exit.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.button_Exit.FlatAppearance.BorderSize = 0;
-            this.button_Exit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(134)))), ((int)(((byte)(193)))));
+            this.button_Exit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(148)))), ((int)(((byte)(138)))));
             this.button_Exit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_Exit.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_Exit.ForeColor = System.Drawing.Color.White;
@@ -265,7 +273,7 @@ namespace TicTacToe
             this.button_Back.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
             this.button_Back.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.button_Back.FlatAppearance.BorderSize = 0;
-            this.button_Back.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(134)))), ((int)(((byte)(193)))));
+            this.button_Back.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(133)))), ((int)(((byte)(193)))), ((int)(((byte)(233)))));
             this.button_Back.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_Back.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_Back.ForeColor = System.Drawing.Color.White;
@@ -379,14 +387,6 @@ namespace TicTacToe
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(6, 83);
             this.panel1.TabIndex = 19;
-            // 
-            // imageList3
-            // 
-            this.imageList3.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList3.ImageStream")));
-            this.imageList3.TransparentColor = System.Drawing.Color.Transparent;
-            this.imageList3.Images.SetKeyName(0, "arrow-left-5-xxl.png");
-            this.imageList3.Images.SetKeyName(1, "cancel-xxl.png");
-            this.imageList3.Images.SetKeyName(2, "refresh-2-xxl.png");
             // 
             // Form_PlayWithFriend
             // 

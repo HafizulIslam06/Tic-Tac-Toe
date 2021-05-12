@@ -130,6 +130,7 @@ namespace TicTacToe
                 {
                     player2sound.Play();
 
+                    button_22.FlatAppearance.BorderColor = Color_0tex;
                     button_22.Text = "0";
                     button_22.Enabled = false;
                 }
@@ -139,18 +140,22 @@ namespace TicTacToe
 
                     if (button_11.Text == "")
                     {
+                        button_11.FlatAppearance.BorderColor = Color_0tex;
                         button_11.Text = "0";
                     }
                     else if (button_13.Text == "")
                     {
+                        button_13.FlatAppearance.BorderColor = Color_0tex;
                         button_13.Text = "0";
                     }
                     else if (button_31.Text == "")
                     {
+                        button_31.FlatAppearance.BorderColor = Color_0tex;
                         button_31.Text = "0";
                     }
                     else if (button_33.Text == "")
                     {
+                        button_33.FlatAppearance.BorderColor = Color_0tex;
                         button_33.Text = "0";
                     }
                 }
@@ -160,18 +165,22 @@ namespace TicTacToe
 
                     if (button_12.Text == "")
                     {
+                        button_12.FlatAppearance.BorderColor = Color_0tex;
                         button_12.Text = "0";
                     }
                     else if (button_21.Text == "")
                     {
+                        button_21.FlatAppearance.BorderColor = Color_0tex;
                         button_21.Text = "0";
                     }
                     else if (button_32.Text == "")
                     {
+                        button_32.FlatAppearance.BorderColor = Color_0tex;
                         button_32.Text = "0";
                     }
                     else if (button_23.Text == "")
                     {
+                        button_23.FlatAppearance.BorderColor = Color_0tex;
                         button_23.Text = "0";
                     }
                 }
@@ -187,16 +196,19 @@ namespace TicTacToe
                 player2sound.Play();
                 if (button_11.Text == "")
                 {
+                    button_11.FlatAppearance.BorderColor = Color_0tex;
                     button_11.Text = "0";
                     button_11.Enabled = false;
                 }
                 else if (button_12.Text == "")
                 {
+                    button_12.FlatAppearance.BorderColor = Color_0tex;
                     button_12.Text = "0";
                     button_12.Enabled = false;
                 }
                 else if (button_13.Text == "")
                 {
+                    button_13.FlatAppearance.BorderColor = Color_0tex;
                     button_13.Text = "0";
                     button_13.Enabled = false;
                 }
@@ -208,16 +220,19 @@ namespace TicTacToe
                 player2sound.Play();
                 if (button_21.Text == "")
                 {
+                    button_21.FlatAppearance.BorderColor = Color_0tex;
                     button_21.Text = "0";
                     button_21.Enabled = false;
                 }
                 else if (button_22.Text == "")
                 {
+                    button_22.FlatAppearance.BorderColor = Color_0tex;
                     button_22.Text = "0";
                     button_22.Enabled = false;
                 }
                 else if (button_23.Text == "")
                 {
+                    button_23.FlatAppearance.BorderColor = Color_0tex;
                     button_23.Text = "0";
                     button_23.Enabled = false;
                 }
@@ -229,16 +244,19 @@ namespace TicTacToe
                 player2sound.Play();
                 if (button_31.Text == "")
                 {
+                    button_31.FlatAppearance.BorderColor = Color_0tex;
                     button_31.Text = "0";
                     button_31.Enabled = false;
                 }
                 else if (button_32.Text == "")
                 {
+                    button_32.FlatAppearance.BorderColor = Color_0tex;
                     button_32.Text = "0";
                     button_32.Enabled = false;
                 }
                 else if (button_33.Text == "")
                 {
+                    button_33.FlatAppearance.BorderColor = Color_0tex;
                     button_33.Text = "0";
                     button_33.Enabled = false;
                 }
@@ -250,16 +268,19 @@ namespace TicTacToe
                 player2sound.Play();
                 if (button_11.Text == "")
                 {
+                    button_11.FlatAppearance.BorderColor = Color_0tex;
                     button_11.Text = "0";
                     button_11.Enabled = false;
                 }
                 else if (button_21.Text == "")
                 {
+                    button_21.FlatAppearance.BorderColor = Color_0tex;
                     button_21.Text = "0";
                     button_21.Enabled = false;
                 }
                 else if (button_31.Text == "")
                 {
+                    button_31.FlatAppearance.BorderColor = Color_0tex;
                     button_31.Text = "0";
                     button_31.Enabled = false;
                 }
@@ -271,16 +292,19 @@ namespace TicTacToe
                 player2sound.Play();
                 if (button_12.Text == "")
                 {
+                    button_12.FlatAppearance.BorderColor = Color_0tex;
                     button_12.Text = "0";
                     button_12.Enabled = false;
                 }
                 else if (button_22.Text == "")
                 {
+                    button_22.FlatAppearance.BorderColor = Color_0tex;
                     button_22.Text = "0";
                     button_22.Enabled = false;
                 }
                 else if (button_32.Text == "")
                 {
+                    button_32.FlatAppearance.BorderColor = Color_0tex;
                     button_32.Text = "0";
                     button_32.Enabled = false;
                 }
@@ -292,16 +316,19 @@ namespace TicTacToe
                 player2sound.Play();
                 if (button_13.Text == "")
                 {
+                    button_13.FlatAppearance.BorderColor = Color_0tex;
                     button_13.Text = "0";
                     button_13.Enabled = false;
                 }
                 else if (button_23.Text == "")
                 {
+                    button_23.FlatAppearance.BorderColor = Color_0tex;
                     button_23.Text = "0";
                     button_23.Enabled = false;
                 }
                 else if (button_33.Text == "")
                 {
+                    button_33.FlatAppearance.BorderColor = Color_0tex;
                     button_33.Text = "0";
                     button_33.Enabled = false;
                 }
@@ -313,16 +340,19 @@ namespace TicTacToe
                 player2sound.Play();
                 if (button_11.Text == "")
                 {
+                    button_11.FlatAppearance.BorderColor = Color_0tex;
                     button_11.Text = "0";
                     button_11.Enabled = false;
                 }
                 else if (button_22.Text == "")
                 {
+                    button_22.FlatAppearance.BorderColor = Color_0tex;
                     button_22.Text = "0";
                     button_22.Enabled = false;
                 }
                 else if (button_33.Text == "")
                 {
+                    button_33.FlatAppearance.BorderColor = Color_0tex;
                     button_33.Text = "0";
                     button_33.Enabled = false;
                 }
@@ -334,16 +364,19 @@ namespace TicTacToe
                 player2sound.Play();
                 if (button_13.Text == "")
                 {
+                    button_13.FlatAppearance.BorderColor = Color_0tex;
                     button_13.Text = "0";
                     button_13.Enabled = false;
                 }
                 else if (button_22.Text == "")
                 {
+                    button_22.FlatAppearance.BorderColor = Color_0tex;
                     button_22.Text = "0";
                     button_22.Enabled = false;
                 }
                 else if (button_31.Text == "")
                 {
+                    button_31.FlatAppearance.BorderColor = Color_0tex;
                     button_31.Text = "0";
                     button_31.Enabled = false;
                 }
@@ -404,16 +437,19 @@ namespace TicTacToe
                 player2sound.Play();
                 if (button_11.Text == "")
                 {
+                    button_11.FlatAppearance.BorderColor = Color_0tex;
                     button_11.Text = "0";
                     button_11.Enabled = false;
                 }
                 else if (button_12.Text == "")
                 {
+                    button_12.FlatAppearance.BorderColor = Color_0tex;
                     button_12.Text = "0";
                     button_12.Enabled = false;
                 }
                 else if (button_13.Text == "")
                 {
+                    button_13.FlatAppearance.BorderColor = Color_0tex;
                     button_13.Text = "0";
                     button_13.Enabled = false;
                 }
@@ -425,16 +461,19 @@ namespace TicTacToe
                 player2sound.Play();
                 if (button_21.Text == "")
                 {
+                    button_21.FlatAppearance.BorderColor = Color_0tex;
                     button_21.Text = "0";
                     button_21.Enabled = false;
                 }
                 else if (button_22.Text == "")
                 {
+                    button_22.FlatAppearance.BorderColor = Color_0tex;
                     button_22.Text = "0";
                     button_22.Enabled = false;
                 }
                 else if (button_23.Text == "")
                 {
+                    button_23.FlatAppearance.BorderColor = Color_0tex;
                     button_23.Text = "0";
                     button_23.Enabled = false;
                 }
@@ -446,16 +485,19 @@ namespace TicTacToe
                 player2sound.Play();
                 if (button_31.Text == "")
                 {
+                    button_31.FlatAppearance.BorderColor = Color_0tex;
                     button_31.Text = "0";
                     button_31.Enabled = false;
                 }
                 else if (button_32.Text == "")
                 {
+                    button_32.FlatAppearance.BorderColor = Color_0tex;
                     button_32.Text = "0";
                     button_32.Enabled = false;
                 }
                 else if (button_33.Text == "")
                 {
+                    button_33.FlatAppearance.BorderColor = Color_0tex;
                     button_33.Text = "0";
                     button_33.Enabled = false;
                 }
@@ -467,16 +509,19 @@ namespace TicTacToe
                 player2sound.Play();
                 if (button_11.Text == "")
                 {
+                    button_11.FlatAppearance.BorderColor = Color_0tex;
                     button_11.Text = "0";
                     button_11.Enabled = false;
                 }
                 else if (button_21.Text == "")
                 {
+                    button_21.FlatAppearance.BorderColor = Color_0tex;
                     button_21.Text = "0";
                     button_21.Enabled = false;
                 }
                 else if (button_31.Text == "")
                 {
+                    button_31.FlatAppearance.BorderColor = Color_0tex;
                     button_31.Text = "0";
                     button_31.Enabled = false;
                 }
@@ -488,16 +533,19 @@ namespace TicTacToe
                 player2sound.Play();
                 if (button_12.Text == "")
                 {
+                    button_12.FlatAppearance.BorderColor = Color_0tex;
                     button_12.Text = "0";
                     button_12.Enabled = false;
                 }
                 else if (button_22.Text == "")
                 {
+                    button_22.FlatAppearance.BorderColor = Color_0tex;
                     button_22.Text = "0";
                     button_22.Enabled = false;
                 }
                 else if (button_32.Text == "")
                 {
+                    button_32.FlatAppearance.BorderColor = Color_0tex;
                     button_32.Text = "0";
                     button_32.Enabled = false;
                 }
@@ -509,16 +557,19 @@ namespace TicTacToe
                 player2sound.Play();
                 if (button_13.Text == "")
                 {
+                    button_13.FlatAppearance.BorderColor = Color_0tex;
                     button_13.Text = "0";
                     button_13.Enabled = false;
                 }
                 else if (button_23.Text == "")
                 {
+                    button_23.FlatAppearance.BorderColor = Color_0tex;
                     button_23.Text = "0";
                     button_23.Enabled = false;
                 }
                 else if (button_33.Text == "")
                 {
+                    button_33.FlatAppearance.BorderColor = Color_0tex;
                     button_33.Text = "0";
                     button_33.Enabled = false;
                 }
@@ -530,16 +581,19 @@ namespace TicTacToe
                 player2sound.Play();
                 if (button_11.Text == "")
                 {
+                    button_11.FlatAppearance.BorderColor = Color_0tex;
                     button_11.Text = "0";
                     button_11.Enabled = false;
                 }
                 else if (button_22.Text == "")
                 {
+                    button_22.FlatAppearance.BorderColor = Color_0tex;
                     button_22.Text = "0";
                     button_22.Enabled = false;
                 }
                 else if (button_33.Text == "")
                 {
+                    button_33.FlatAppearance.BorderColor = Color_0tex;
                     button_33.Text = "0";
                     button_33.Enabled = false;
                 }
@@ -551,16 +605,19 @@ namespace TicTacToe
                 player2sound.Play();
                 if (button_13.Text == "")
                 {
+                    button_13.FlatAppearance.BorderColor = Color_0tex;
                     button_13.Text = "0";
                     button_13.Enabled = false;
                 }
                 else if (button_22.Text == "")
                 {
+                    button_22.FlatAppearance.BorderColor = Color_0tex;
                     button_22.Text = "0";
                     button_22.Enabled = false;
                 }
                 else if (button_31.Text == "")
                 {
+                    button_31.FlatAppearance.BorderColor = Color_0tex;
                     button_31.Text = "0";
                     button_31.Enabled = false;
                 }
