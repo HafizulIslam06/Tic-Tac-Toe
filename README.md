@@ -3,6 +3,6 @@ Tic Tac Toe is a paper-and-pencil game for two players, X and O, who take turns 
 
 In this game,we will see a home page first.What will give us access of 4 option(1.New Game 2.Multiplayer 3.Setting & 4.Help).
 
-New Game    : We will be able to play with artificial intelligence here.
-Multiplayer : We will be able to play with Friends here. 
+New Game    : We will be able to play with artificial intelligence here.      
+Multiplayer : We will be able to play with Friends here.      
 Help        : Game instraction/Rules
