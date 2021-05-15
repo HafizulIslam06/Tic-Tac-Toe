@@ -8,4 +8,5 @@ Help        : Game instraction/Rules
 ![1](https://user-images.githubusercontent.com/84075184/118369025-a0261580-b5c4-11eb-8157-592df0cfafff.png)
 ![3](https://user-images.githubusercontent.com/84075184/118369450-3eb27680-b5c5-11eb-9e63-6d0060579f14.png)
 ![4](https://user-images.githubusercontent.com/84075184/118369490-6570ad00-b5c5-11eb-8e5e-a49740d722b8.png)
+![2](https://user-images.githubusercontent.com/84075184/118369532-8f29d400-b5c5-11eb-9b88-fd90ca16a865.png)
 
