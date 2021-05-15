@@ -6,3 +6,5 @@ New Game    : We will be able to play with artificial intelligence here.
 Multiplayer : We will be able to play with Friends here.      
 Help        : Game instraction/Rules    
 ![1](https://user-images.githubusercontent.com/84075184/118369025-a0261580-b5c4-11eb-8157-592df0cfafff.png)
+![3](https://user-images.githubusercontent.com/84075184/118369450-3eb27680-b5c5-11eb-9e63-6d0060579f14.png)
+
